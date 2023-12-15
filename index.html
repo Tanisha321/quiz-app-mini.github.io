@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Time !!!!!!!!!!! </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg " style="background-color: #dee22b;">
+        <div class="container-fluid" style="justify-content: end;">
+            <button class="navbar-toggler" style="font-size: 25px;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"><img class="logo" src="assets/img/trophy.png" alt=""></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            style="font-size: 25px; font-weight: bold; color: #8A2BE2; margin-left: 10px;"
+                            aria-current="page" href="index.html">QUIZZ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            style="font-size: 25px; font-weight: bold; color: #8A2BE2; margin-left: 10px; cursor: pointer;"
+                            aria-current="page" onclick="location.reload()">RELOAD</a>
+                    </li>
+                  
+                    
+                </ul>
+              
+            </div>
+        </div>
+    </nav>
+
+    <div class="lower-nav">
+
+
+        <div class="countdown" style="width: 100%; background-color:#8A2BE2; padding: 10px;">
+
+            <div class="counter">
+                <span id="countdown" style="font-weight: bold;"></span>
+
+            </div>
+        </div>
+
+        <div class="countdown" style="width: 100%; background-color:#8A2BE2; padding: 10px;">
+            <div class="counter" >
+                <h1 style="font-weight: bold;">Solved</h1>
+                <span id="q_left" style="font-weight: bold; font-size: 25px;">0/19</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class=" main-div container-fluid">
+
+        <div class="container counter">
+            <h1 class="heading">Questions</h1>
+        </div>
+
+        <div class=" inner-div container  " style="text-align: left; box-shadow: 21px 20px 12px 3px rgba(0,0,0,0.74);
+        -webkit-box-shadow: 21px 20px 12px 3px rgba(0,0,0,0.74);
+        -moz-box-shadow: 21px 20px 12px 3px rgba(0,0,0,0.74);">
+
+            <h2 class="question heading-primary-main"> Question comes here </h2>
+            <ul>
+                <li class="heading-primary-sub">
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1"> Option 1 </label>
+
+                </li>
+                <li class="heading-primary-sub">
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">Option 2 </label>
+
+                </li>
+             
+                <li class="heading-primary-sub">
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3"> Option 3</label>
+
+                </li>
+                <li class="heading-primary-sub">
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4">Option 4 </label>
+
+                </li>
+            </ul>
+            <div class="next">
+                <button class="enter" id="submit"> Next</button>
+            </div>
+           
+
+            <div id="showScore" class="scoreArea ">
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
